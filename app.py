@@ -156,13 +156,11 @@ header[data-testid="stHeader"] {{
     min-height: 48px;
 }}
 
-/* Force black text for the AI model selector values (e.g., GPT-* labels). */
 [data-testid="stSidebar"] [data-testid="stSelectbox"] div[data-baseweb="select"] span,
 [data-testid="stSidebar"] [data-testid="stSelectbox"] div[data-baseweb="select"] * {{
     color: #000000 !important;
 }}
 
-/* Force black text for file uploader instructions/help text in the sidebar. */
 [data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] *,
 [data-testid="stSidebar"] [data-testid="stFileUploaderDropzoneInstructions"] * {{
     color: #000000 !important;
@@ -174,8 +172,8 @@ header[data-testid="stHeader"] {{
 }}
 
 [data-testid="stSidebar"] .stButton > button:hover {{
-    border-color: rgba(243, 198, 20, 0.6) !important;
-    color: #f3c614 !important;
+    border-color: rgba(255, 199, 44, 0.7) !important;
+    color: #FFC72C !important;
 }}
 
 .top-strip {{
@@ -279,13 +277,12 @@ header[data-testid="stHeader"] {{
     border-color: rgba(255, 255, 255, 0.12) !important;
 }}
 
-/* Dark mode version from Vision */
 body[data-theme="dark"] [data-testid="stAppViewContainer"] {{
-    background: radial-gradient(120% 120% at 10% 10%, #07144b 0%, #020b2e 45%, #01051a 100%) !important;
+    background: radial-gradient(120% 120% at 10% 10%, #0066cc 0%, #004a99 45%, #003366 100%) !important;
 }}
 
 body[data-theme="dark"] [data-testid="stMain"] {{
-    background: radial-gradient(120% 120% at 40% 30%, #1a223f 0%, #121a34 45%, #0b1228 100%) !important;
+    background: radial-gradient(120% 120% at 40% 30%, #1a4d8f 0%, #123a6e 45%, #0a2850 100%) !important;
     border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 22px 40px rgba(0, 0, 0, 0.45);
 }}
@@ -296,7 +293,7 @@ body[data-theme="dark"] [data-testid="stMain"]::before {{
 }}
 
 body[data-theme="dark"] .main-title-wrap h1 {{
-    color: #e9cf8a !important;
+    color: #FFD84D !important;
 }}
 
 body[data-theme="dark"] .subtext {{
@@ -324,8 +321,8 @@ body[data-theme="dark"] [data-testid="stChatInput"] textarea {{
 }}
 
 body[data-theme="dark"] [data-testid="stChatInput"] button {{
-    background: #f3c614 !important;
-    color: #0b1228 !important;
+    background: #FFC72C !important;
+    color: #002d66 !important;
 }}
 
 @media (max-width: 900px) {{
