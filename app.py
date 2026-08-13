@@ -111,11 +111,11 @@ html, body, [class*="css"] {{
 }}
 
 header[data-testid="stHeader"] {{
-    background: #f3c614 !important;
+    background: #FFC72C !important;
 }}
 
 [data-testid="stSidebar"] {{
-    background: radial-gradient(120% 120% at 10% 10%, #06195f 0%, #020a2a 45%, #01051a 100%) !important;
+    background: radial-gradient(120% 120% at 10% 10%, #0057b8 0%, #003f8c 45%, #002d66 100%) !important;
     border-right: 1px solid rgba(255, 255, 255, 0.12) !important;
 }}
 
@@ -140,7 +140,7 @@ header[data-testid="stHeader"] {{
 }}
 
 .sidebar-brand span {{
-    color: #eecf77 !important;
+    color: #FFD84D !important;
     font-size: 1.9rem;
     font-weight: 800;
     letter-spacing: 0.4px;
@@ -182,7 +182,7 @@ header[data-testid="stHeader"] {{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: #f3c614;
+    background: #FFC72C;
     border-radius: 10px;
     padding: 8px 12px;
     margin: -0.25rem -0.6rem 1.2rem -0.6rem;
@@ -258,7 +258,7 @@ header[data-testid="stHeader"] {{
 }}
 
 [data-testid="stChatInput"] button {{
-    background: #9ca3af !important;
+    background: #0057b8 !important;
     color: #ffffff !important;
     border-radius: 999px !important;
 }}
