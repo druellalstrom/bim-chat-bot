@@ -1,0 +1,66 @@
+{
+  "context_name": "BIM Chatbot Business Intelligence Context",
+  "prepared_on": "2026-04-21",
+  "description": "Structured context for Barbados-focused travel, services, and user-support responses.",
+  "data_sources": [
+    {
+      "name": "Barbados Event Listings",
+      "type": "public_website_derived",
+      "source": "https://www.visitbarbados.org",
+      "local_file": "events.json",
+      "refresh_cadence": "monthly_or_as_announced",
+      "usage": "Recommend events, seasonality, and date-aware activities."
+    },
+    {
+      "name": "Barbados Tourism and Service Knowledge",
+      "type": "synthetic_curated",
+      "source": "Project-curated from public Barbados references and domain assumptions",
+      "local_file": "business_context.json",
+      "refresh_cadence": "quarterly",
+      "usage": "Support responses about tourism, accommodations, transport, and planning."
+    }
+  ],
+  "kpi_framework": {
+    "primary_objectives": [
+      "Improve answer relevance for Barbados-specific requests",
+      "Reduce unsupported claims by grounding answers in local datasets",
+      "Provide practical recommendations with links and context"
+    ],
+    "operational_metrics": [
+      {
+        "name": "context_hit_rate",
+        "definition": "Percent of user questions that match at least one local knowledge source",
+        "target": ">= 70%"
+      },
+      {
+        "name": "grounded_response_rate",
+        "definition": "Percent of responses referencing known local data or explicit uncertainty",
+        "target": ">= 95%"
+      },
+      {
+        "name": "event_recommendation_freshness",
+        "definition": "Percent of event recommendations sourced from current-year entries",
+        "target": ">= 90%"
+      }
+    ]
+  },
+  "policy_notes": [
+    "Prefer local dataset evidence before general model priors.",
+    "If data is missing or stale, explicitly state uncertainty.",
+    "Do not present synthetic metrics as official government statistics.",
+    "Use external links only when available in known datasets or trusted Barbados sources."
+  ],
+  "agent_usage_rules": {
+    "retrieval_priority": [
+      "User-uploaded documents",
+      "business_context.json",
+      "events.json",
+      "model baseline knowledge"
+    ],
+    "response_behavior": [
+      "Cite the type of source used (uploaded doc, local dataset, or general knowledge).",
+      "When recommending events, include date and location if available.",
+      "When no dataset evidence is available, ask a follow-up question or provide a cautious generic answer."
+    ]
+  }
+}

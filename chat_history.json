@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Context from documents:\nPython Programming Best Practices\n\n1. Use virtual environments to isolate project dependencies\n2. Follow PEP 8 style guidelines for consistent code formatting\n3. Write docstrings for all functions and classes\n4. Use type hints to improve code clarity\n5. Handle exceptions appropriately with try-except blocks\n6. Keep functions small and focused on a single task\n7. Use meaningful variable and function names\n8. Write unit tests for critical functionality\n9. Use version control (Git) for all projects\n10. Document your code and maintain a README file\n\n\nUser question: What are Python best practices?"
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "capital": "Bridgetown",
+  "parishes": [
+    "Christ Church",
+    "Saint Andrew",
+    "Saint George",
+    "Saint James",
+    "Saint John",
+    "Saint Joseph",
+    "Saint Lucy",
+    "Saint Michael",
+    "Saint Peter",
+    "Saint Philip",
+    "Saint Thomas"
+  ],
+  "emergency_contacts": {
+    "police": "211",
+    "fire": "311",
+    "ambulance": "511"
+  },
+  "recipes": {
+    "cou-cou": {
+      "ingredients": [
+        "cornmeal",
+        "okra",
+        "water",
+        "salt",
+        "butter"
+      ],
+      "steps": [
+        "Boil sliced okra in water until soft.",
+        "Keep the okra liquid.",
+        "Slowly add cornmeal while stirring.",
+        "Add butter and salt.",
+        "Turn until smooth and firm."
+      ]
+    }
+  },
+  "transport_notes": {
+    "general": "Public transport includes government buses, minibuses, and ZR vans."
+  },
+  "hotels": [
+    {
+      "name": "South Gap Hotel",
+      "location": "St. Lawrence Gap, Christ Church",
+      "type": "hotel",
+      "near": [
+        "beach",
+        "restaurants"
+      ],
+      "link": "https://example.com/south-gap"
+    },
+    {
+      "name": "Yellow Bird Hotel",
+      "location": "St. Lawrence Gap, Christ Church",
+      "type": "hotel",
+      "near": [
+        "beach",
+        "nightlife"
+      ],
+      "link": "https://example.com/yellow-bird"
+    }
+  ],
+  "events": [
+    {
+      "name": "Oistins Fish Fry",
+      "date": "Friday",
+      "location": "Oistins, Christ Church",
+      "price": "Varies",
+      "link": "https://example.com/oistins"
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Customer Service Representative",
+      "company": "Island Support Ltd",
+      "location": "Bridgetown",
+      "link": "https://example.com/job-customer-service"
+    }
+  ]
+}

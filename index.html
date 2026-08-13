@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIM-CHATBOT</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-shell">
+    <button class="btn-mode-toggle" id="modeToggle">🌙 DARK MODE</button>
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+          <div class="sidebar-brand">
+            <img src="assets/bim%20test.png" alt="BIM-CHATBOT logo" class="brand-flag" />
+            <span class="brand-name">BIM-CHATBOT</span>
+          </div>
+
+          <div class="sidebar-section">
+            <label class="section-label">🧠 AI Model</label>
+            <div class="select-wrap">
+              <select id="modelSelect">
+                <option value="gpt4">GPT-4o (Best accuracy)</option>
+                <option value="gpt35">GPT-3.5 Turbo</option>
+                <option value="claude">Claude 3.5</option>
+                <option value="gemini">Gemini 1.5 Pro</option>
+              </select>
+              <span class="select-arrow">▾</span>
+            </div>
+          </div>
+
+          <button class="btn-new-chat" id="newChatBtn">
+            <span class="plus-icon">+</span> New Chat
+          </button>
+
+          <div class="sidebar-section history-section">
+            <label class="section-label">💬 Chat History</label>
+            <p class="history-empty" id="historyEmpty">No saved chats yet.</p>
+            <ul class="history-list" id="historyList"></ul>
+          </div>
+
+          <div class="sidebar-footer">
+            <label class="section-label">Save chat as:</label>
+            <input type="text" id="saveChatInput" placeholder="Enter a name..." class="save-input" />
+            <button class="btn-save" id="saveChatBtn">💾 Save Chat</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <div class="top-bar">
+          <div class="top-bar-right">
+            <button class="btn-deploy">Deploy</button>
+            <button class="btn-three-dot" id="menuBtn" aria-label="More options">⋮</button>
+            <div class="dot-menu" id="dotMenu">
+              <ul>
+                <li id="exportChat">Export Chat</li>
+                <li id="clearHistory">Clear History</li>
+                <li id="aboutBot">About BIM-CHATBOT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-card">
+          <div class="trident-bg" aria-hidden="true"></div>
+
+          <div class="chat-header">
+            <div class="chat-header-icon">
+              <img src="assets/bim%20test.png" alt="BIM icon" />
+            </div>
+            <div class="chat-header-text">
+              <h1 class="chat-title">BIM-CHATBOT</h1>
+              <p class="chat-subtitle">Your intelligent BIM assistant powered by document retrieval</p>
+            </div>
+          </div>
+
+          <button class="events-card" id="eventsCardBtn" type="button">
+            <span class="events-caret">›</span>
+            <span class="events-icon">🎉</span>
+            <div class="events-text">
+              <strong>Upcoming Barbados Events</strong>
+            </div>
+            <span class="events-arrow">›</span>
+          </button>
+
+          <div class="message-feed" id="messageFeed"></div>
+
+          <div class="typing-indicator" id="typingIndicator" style="display:none;">
+            <div class="avatar bot-avatar">B</div>
+            <div class="typing-dots"><span></span><span></span><span></span></div>
+          </div>
+
+          <div class="input-wrap">
+            <div class="input-bar">
+              <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask me anything..."
+                autocomplete="off"
+              />
+              <button class="btn-send" id="sendBtn" title="Send">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
